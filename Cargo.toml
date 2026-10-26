@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-iso-root"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "ISO root filesystem"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-iso-root"
+readme = "README.md"
+keywords = ["iso", "root", "filesystem"]
+categories = ["os"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
