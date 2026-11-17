@@ -3,12 +3,12 @@ name = "SigmaOS-iso-root"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "iso-root component"
+description = "SigmaOS ISO root filesystem structure and livecd builder"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
